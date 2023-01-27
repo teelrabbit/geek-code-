@@ -17,3 +17,7 @@ Explanation: The odd numbers between 8 and 10 are [9].
 Constraints:
 
 0 <= low <= high <= 10^9
+
+
+### Explanation 
+This solution takes advantage of the fact that odd numbers are separated by even numbers. If the low number is even, it is incremented to the next odd number. If the high number is even, it is decremented to the previous odd number. Then, we can simply calculate the number of odd numbers within the range by dividing the difference between the modified low and high by 2 and adding 1.
